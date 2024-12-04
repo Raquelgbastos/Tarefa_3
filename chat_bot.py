@@ -27,6 +27,7 @@ def obter_resposta(texto: str) -> str:
         'tempo': 'Está um dia de sol!',
         ('hobbies', 'passatempo'): 'Meu hobby é processar informações e conversar!'
         'filme favorito': 'Como sou um programa, não assisto filmes, mas adoro "O Código Matrix"!',
+        'comida favorita': 'Minha comida favorita são dados binários!',
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...'
         'horas': f'São: {datetime.now():%H:%M} horas',
         'data': f'Hoje é dia: {datetime.now():%d-%m-%Y}'
