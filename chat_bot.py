@@ -30,6 +30,7 @@ def obter_resposta(texto: str) -> str:
         'comida favorita': 'Minha comida favorita são dados binários!',
         ('quem és', 'o que és'): 'Sou um chatbot, um programa de computador para conversar e ajudar.',
         'tua origem': 'Fui criado para interagir e auxiliar as pessoas.',
+        ('desporto', 'futebol'): 'Torço para a seleção de processadores!'
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...'
         'horas': f'São: {datetime.now():%H:%M} horas',
         'data': f'Hoje é dia: {datetime.now():%d-%m-%Y}'
