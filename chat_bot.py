@@ -25,13 +25,13 @@ def obter_resposta(texto: str) -> str:
         'como estás': 'Estou bem, obrigado!',
         'como te chamas': 'O meu nome é: Bot :)',
         'tempo': 'Está um dia de sol!',
-        ('hobbies', 'passatempo'): 'Meu hobby é processar informações e conversar!'
+        ('hobbies', 'passatempo'): 'Meu hobby é processar informações e conversar!',
         'filme favorito': 'Como sou um programa, não assisto filmes, mas adoro "O Código Matrix"!',
         'comida favorita': 'Minha comida favorita são dados binários!',
         ('quem és', 'o que és'): 'Sou um chatbot, um programa de computador para conversar e ajudar.',
         'tua origem': 'Fui criado para interagir e auxiliar as pessoas.',
-        ('desporto', 'futebol'): 'Torço para a seleção de processadores!'
-        ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...'
+        ('desporto', 'futebol'): 'Torço para a seleção de processadores!',
+        ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...',
         'horas': f'São: {datetime.now():%H:%M} horas',
         'data': f'Hoje é dia: {datetime.now():%d-%m-%Y}'
     }
@@ -43,19 +43,14 @@ def obter_resposta(texto: str) -> str:
         elif chave in comando:
             return resposta
 
-    if 'horas' in comando:
-        return f'São: {datetime.now():%H:%M} horas'
-
-    if 'data' in comando:
-        return f'Hoje é dia: {datetime.now():%d-%m-%Y}'
-
+    
     return f'Desculpa, não entendi a questão! {texto}'
 
 
 def chat() -> None:
-    print('Bem-vindo ao ChatBot!')
-    print('Escreva "bye" para sair do chat')
-    name: str = input('Bot: Como te chamas? ')
+    print('\033[1;35mBem-vindo ao ChatBot!\033[m')
+    print('\033[1;35mEscreva "bye" para sair do chat\033[m')
+    name: str = input('\033[1;35mBot: Como te chamas?\033[m ')
     print(f'Bot: Olá, {name}! \n Como te posso ajudar?')
 
     while True:
