@@ -43,6 +43,7 @@ def obter_resposta(texto: str) -> str:
         elif chave in comando:
             return resposta
 
+
     
     return f'Desculpa, não entendi a questão! {texto}'
 
